@@ -1,4 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,400;1,700&display=swap");
+
+:root {
+  --purple: #4932b9;
+  --yellow: #e19e1a;
+  --blue: #1d4fe8;
+}
+
 body {
+  font-family: "Lato", sans-serif;
   height: 100vh;
   margin: 0;
   overflow: hidden;
@@ -7,11 +16,21 @@ body {
 .page {
   position: relative;
   height: 100vh;
+  width: 100%;
 }
 
 .container {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 20% 50% 30%;
+  grid-template-areas:
+    "nav     aside"
+    "section aside"
+    "footer  aside";
   position: absolute;
   z-index: 1;
+  height: 100%;
+  width: 100%;
 }
 
 .loader {
