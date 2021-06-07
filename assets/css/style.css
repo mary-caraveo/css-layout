@@ -165,6 +165,54 @@ body {
   height: 100%;
 }
 
+.footer {
+  display: flex;
+  background: var(--yellow);
+  justify-content: space-evenly;
+  align-items: flex-end;
+  border-radius: 0 80px 0 0;
+  transform: translateY(100%);
+  animation-name: footer;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes footer {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.footer div img {
+  position: absolute;
+  width: 160px;
+  bottom: 15px;
+
+  transform: translateY(0px) scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.footer div:hover img {
+  cursor: pointer;
+  transform: translateY(-20px) scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer div {
+  display: flex;
+  justify-content: center;
+  background: var(--green);
+  width: 130px;
+  height: 60%;
+  border-radius: 20px 20px 0 0;
+}
+
 .loader {
   display: flex;
   align-items: center;
