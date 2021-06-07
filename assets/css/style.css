@@ -298,8 +298,60 @@ body {
 }
 
 .modal__content {
+  display: grid;
+  place-items: center;
   background: white;
   width: 50%;
   height: 50%;
   border-radius: 25px;
+}
+
+.modal__content--slider {
+  width: 300px;
+  height: 200px;
+  transform-style: preserve-3d;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  background: var(--yellow);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  width: 50%;
+  height: 100%;
+}
+
+#radio-1:checked ~ .cards #card-1,
+#radio-2:checked ~ .cards #card-2,
+#radio-3:checked ~ .cards #card-3 {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+#radio-1:checked ~ .cards #card-2,
+#radio-2:checked ~ .cards #card-3,
+#radio-3:checked ~ .cards #card-1 {
+  transform: translateX(40%) scale(0.8);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+#radio-1:checked ~ .cards #card-3,
+#radio-2:checked ~ .cards #card-1,
+#radio-3:checked ~ .cards #card-2 {
+  transform: translateX(-40%) scale(0.8);
+  opacity: 0.5;
+  z-index: 0;
 }
