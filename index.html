@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>Landing</title>
 </head>
 
 <body>
@@ -41,8 +41,8 @@
 
             <section class="footer">
                 <div id="button1"><img src="./assets/img/ironman.png" alt="ironman"></div>
-                <div><img src="./assets/img/thor.png" alt="thor"></div>
-                <div><img src="./assets/img/pantera.png" alt="pantera"></div>
+                <div id="button2"><img src="./assets/img/thor.png" alt="thor"></div>
+                <div id="button3"><img src="./assets/img/pantera.png" alt="pantera"></div>
             </section>
 
             <section class="loader">
@@ -51,13 +51,41 @@
                 <div></div>
             </section>
 
-            <section class="modal hidden"></section>
+            <section class="modal hidden">
+                <div class="modal__content">
+                    <img class="modal__content--close" src="https://img.icons8.com/windows/50/000000/macos-close.png" />
+                </div>
+            </section>
     </div>
 </body>
 
 <script>
-    const modal = document.querySelector('#modal')
+    const modal = document.querySelector('.modal')
     const button1 = document.querySelector('#button1')
+    const button2 = document.querySelector('#button2')
+    const button3 = document.querySelector('#button3')
+    const closeButton = document.querySelector('.modal__content--close')
+
+    button1.addEventListener('click', () => {
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+    })
+
+    button2.addEventListener('click', () => {
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+    })
+
+    button3.addEventListener('click', () => {
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+    })
+
+    closeButton.addEventListener('click', () => {
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')
+    })
+
 </script>
 
 </html>

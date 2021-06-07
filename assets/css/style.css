@@ -279,12 +279,12 @@ body {
   }
 }
 
-.visible {
-  display: grid;
-}
-
 .hidden {
   display: none;
+}
+
+.visible {
+  display: grid;
 }
 
 .modal {
@@ -293,4 +293,13 @@ body {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: 4;
+  place-items: center;
+  cursor: pointer;
+}
+
+.modal__content {
+  background: white;
+  width: 50%;
+  height: 50%;
+  border-radius: 25px;
 }
