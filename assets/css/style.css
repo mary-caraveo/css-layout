@@ -191,9 +191,8 @@ body {
 
 .footer div img {
   position: absolute;
-  width: 160px;
+  width: 145px;
   bottom: 15px;
-
   transform: translateY(0px) scale(1);
   transition: transform 0.5s ease-in-out;
 }
@@ -208,21 +207,60 @@ body {
   display: flex;
   justify-content: center;
   background: var(--yellow);
-  width: 130px;
+  width: 150px;
   height: 60%;
   border-radius: 20px 20px 0 0;
+}
+
+.footer div:nth-child(1) {
+  transform: translateY(200px);
+
+  animation-name: footer-image;
+  animation-duration: 0.5s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.footer div:nth-child(2) {
+  transform: translateY(200px);
+
+  animation-name: footer-image;
+  animation-duration: 0.5s;
+  animation-delay: 3.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.footer div:nth-child(3) {
+  transform: translateY(200px);
+
+  animation-name: footer-image;
+  animation-duration: 0.5s;
+  animation-delay: 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes footer-image {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .loader {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: papayawhip;
+  background: white;
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 3;
-  animation: loader 0s linear forwards;
+  animation: loader 1.5s linear forwards;
 }
 
 @keyframes loader {
@@ -243,7 +281,7 @@ body {
 }
 
 .loader div {
-  background: hotpink;
+  background: var(--red);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -301,7 +339,7 @@ body {
   display: grid;
   place-items: center;
   background: white;
-  width: 50%;
+  width: 40%;
   height: 50%;
   border-radius: 25px;
 }
@@ -310,6 +348,23 @@ body {
   width: 300px;
   height: 200px;
   transform-style: preserve-3d;
+}
+
+.modal__content--slider input {
+  visibility: hidden;
+}
+
+.modal__content--close {
+  place-self: end;
+  align-self: start;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.modal__content--close:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .cards {
@@ -328,10 +383,14 @@ body {
   margin: 0 auto;
   transition: transform 0.5s ease;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
+.card img {
+  width: 60%;
+}
 #radio-1:checked ~ .cards #card-1,
 #radio-2:checked ~ .cards #card-2,
 #radio-3:checked ~ .cards #card-3 {
@@ -354,4 +413,24 @@ body {
   transform: translateX(-40%) scale(0.8);
   opacity: 0.5;
   z-index: 0;
+}
+
+.button-content {
+  background: var(--red);
+  box-sizing: border-box;
+  padding: 8px 40px;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  border-radius: 20px;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button-content:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
