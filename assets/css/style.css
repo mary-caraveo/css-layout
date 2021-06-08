@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;400;700&display=swap");
 
 :root {
   --red: #992425;
@@ -28,7 +28,6 @@ body {
     "section aside"
     "footer  aside";
   position: absolute;
-  z-index: 1;
   height: 100%;
   width: 100%;
 }
@@ -74,6 +73,11 @@ body {
   text-decoration: none;
 }
 
+.navbar__content ul li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
@@ -103,11 +107,11 @@ body {
 
 @keyframes main-content {
   0% {
-    transform: translateY(-600px);
+    transform: translateX(-600px);
   }
 
   100% {
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -214,7 +218,6 @@ body {
 
 .footer div:nth-child(1) {
   transform: translateY(200px);
-
   animation-name: footer-image;
   animation-duration: 0.5s;
   animation-delay: 3s;
@@ -224,7 +227,6 @@ body {
 
 .footer div:nth-child(2) {
   transform: translateY(200px);
-
   animation-name: footer-image;
   animation-duration: 0.5s;
   animation-delay: 3.5s;
@@ -234,7 +236,6 @@ body {
 
 .footer div:nth-child(3) {
   transform: translateY(200px);
-
   animation-name: footer-image;
   animation-duration: 0.5s;
   animation-delay: 4s;
