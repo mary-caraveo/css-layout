@@ -1,0 +1,68 @@
+@media (max-width: 575.98px) {
+  .navbar__content {
+    width: 0;
+    padding: 0 0 0 20px;
+  }
+
+  .container {
+    grid-template-rows: 10% 60% 30%;
+  }
+
+  .main-content {
+    padding-left: 15px;
+  }
+
+  .main-content p:last-child {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .modal__content {
+    width: 92%;
+    height: 45vh;
+  }
+
+  .card {
+    width: 70%;
+    height: 80%;
+  }
+
+  .button-content {
+    margin: 0 0 10px 0;
+  }
+
+  .footer {
+    width: 100vw;
+  }
+
+  .footer div img {
+    width: 100px;
+  }
+
+  .footer div {
+    height: 20vh;
+    width: 108px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .footer div {
+    width: 30%;
+    height: 17vw
+  }
+
+  .footer div img {
+    width: 90px;
+  }
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer {
+    width: 70vw;
+  }
+
+  .footer div {
+    height: 70%;
+    width: 28%;
+  }
+}
