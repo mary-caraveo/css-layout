@@ -40,6 +40,7 @@ body {
 .navbar__content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 0 0 0 80px;
   animation: 2s navbar 0.5s ease-in-out;
@@ -56,8 +57,12 @@ body {
 }
 
 .navbar__content img {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 50px;
 }
+
 
 .navbar__content ul {
   display: flex;
@@ -76,6 +81,15 @@ body {
 .navbar__content ul li:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.menu_image {
+  display: none;
+  background-color: var(--red);
+  -webkit-mask: url(/assets/img/bars-solid.svg) no-repeat center;
+  mask: url(/assets/img/bars-solid.svg) no-repeat center;
+  width: 50px;
+  height: 50px;
 }
 
 .main-content {
