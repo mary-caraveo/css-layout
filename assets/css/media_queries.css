@@ -50,6 +50,10 @@
     margin: 0 0 10px 0;
   }
 
+  .side-content div {
+    border-radius: 25px 0 0 25px;
+  }
+
   .footer {
     width: 100vw;
     border-radius: 0;
