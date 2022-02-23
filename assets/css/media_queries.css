@@ -9,6 +9,7 @@
 
   .navbar__content {
     padding: 0 1em 0 20px;
+    width: 100%;
   }
 
   .navbar__content ul {

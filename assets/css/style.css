@@ -41,7 +41,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   padding: 0 0 0 80px;
   animation: 2s navbar 0.5s ease-in-out;
 }
@@ -62,7 +61,6 @@ body {
   align-items: flex-start;
   width: 50px;
 }
-
 
 .navbar__content ul {
   display: flex;
@@ -413,6 +411,7 @@ body {
 .card img {
   width: 60%;
 }
+
 #radio-1:checked ~ .cards #card-1,
 #radio-2:checked ~ .cards #card-2,
 #radio-3:checked ~ .cards #card-3 {
