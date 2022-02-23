@@ -92,6 +92,12 @@ body {
   height: 40px;
 }
 
+.navbar__content .menu_image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  width: 55px;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
