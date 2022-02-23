@@ -19,7 +19,7 @@
     grid-template-areas:
     "nav     nav"
     "section aside"
-    "footer  aside";
+    "footer  footer";
     grid-template-rows: 10% 60% 30%;
   }
 
@@ -30,6 +30,10 @@
   .main-content p:last-child {
     width: 100%;
     text-align: justify;
+  }
+
+  .main-content p:first-child {
+    margin: 0 0 -4px 40px;
   }
 
   .modal__content {
@@ -48,6 +52,7 @@
 
   .footer {
     width: 100vw;
+    border-radius: 0;
   }
 
   .footer div img {
