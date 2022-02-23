@@ -91,3 +91,13 @@
     width: 28%;
   }
 }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  body {
+    overflow-y: scroll;
+  }
+
+  .modal__content {
+    width: 50%;
+  }
+ }
