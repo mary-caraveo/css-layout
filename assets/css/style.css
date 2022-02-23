@@ -104,7 +104,7 @@ body {
 .main-content p:first-child {
   font-size: 36px;
   font-weight: 300;
-  margin: 0 0 -14px 44px;
+  margin: 0 0 -8px 44px;
 }
 
 .main-content h1 {
@@ -117,6 +117,7 @@ body {
   font-weight: 100;
   margin: 0;
   width: 60%;
+  text-align: justify;
 }
 
 @keyframes main-content {
